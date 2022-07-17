@@ -7,7 +7,24 @@
     <title>ToDoList</title>
 </head>
 <body>
-    <h1>It's a <%= kindOfDay %>!</h1>
-    <p>Why are you not working!?</p>
+    <h1> <%= kindOfDay %> </h1>
+    <ul>
+     <%   for (let i = 0; i < newListItems.length; i++) { %>
+             <li><%= newListItems[i] %></li> 
+     <%   } %>
+
+
+    </ul>
+
+
+        <form class= "" action="/" method="post">
+            <input type="text" name="newItem">
+            <button type="submit" name="button">Add</button>
+        </form>
+    
+
+
+
+
 </body>
 </html>
