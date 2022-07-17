@@ -5,7 +5,7 @@ const app = express()
 var items = ["Buy Food", "Cook food", "Eat food"]
 app.set('view engine', 'ejs') // Tells our app to use EJS as its view engine
 app.use(bodyParser.urlencoded({extended: true}))
-
+app.use(express.static("public")) // Telss our app where to find our css sheet
 
 
 app.get("/", (req, res) => {
